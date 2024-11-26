@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA All-Stars</title>
+    <link rel="icon" href="media/ball.png" type="image/svg+xml">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;  /* White background */
+            color: #000000;  /* Black text */
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Logo styling for top corners */
+        .logo {
+            position: absolute;
+            top: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .top-left {
+            left: 10px;
+        }
+
+        .top-right {
+            right: 10px;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #006bb6;  /* NBA blue color */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #000000;  /* Black for the description text */
+        }
+
+        /* Cards container */
+        .player-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Player card styling */
+        .player-card {
+            background-color: #f4f4f4;  /* Light gray background for cards */
+            border: 2px solid #006bb6;  /* NBA Blue border */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;  /* Flexbox to align content */
+            flex-direction: row;  /* Place content in a row (image and text) */
+            align-items: center;  /* Align items vertically */
+        }
+
+        .player-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Player info styling */
+        .player-info {
+            padding: 20px;
+            flex: 1;  /* Allow the info to take the remaining space */
+        }
+
+        .player-info h2 {
+            font-size: 1.5rem;
+            color: #006bb6;  /* NBA blue for player name */
+            margin-bottom: 10px;
+        }
+
+        .player-info p {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #000000;  /* Black text for player details */
+        }
+
+        .player-info strong {
+            color: #ff3f3f;  /* NBA red for labels */
+        }
+
+        /* Player image styling */
+        .player-card img {
+            width: 150px;  /* Set image size */
+            height: 200px;
+            object-fit: cover;
+            margin-left: 20px;  /* Space between image and text */
+            border-radius: 10px;
+            align-self: center;  /* Center the image vertically */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- NBA All-Star Weekend Logo (Top left) -->
+    <img src="media/allstarlogo.png" alt="NBA All-Star Logo" class="logo top-left">
+    
+    <!-- NBA All-Star Weekend Logo (Top right) -->
+    <img src="media/allstarlogo.png" alt="NBA All-Star Logo" class="logo top-right">
+
+    <header>
+        <h1>NBA All-Stars</h1>
+        <p>Explore the NBA All-Star Players</p>
+    </header>
+
+    <div class="player-cards">
+        <!-- Player 1: LeBron James -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/2544/traditional" target="_blank">LeBron James</a></h2>
+                <p><strong>Team:</strong> Los Angeles Lakers</p>
+                <p><strong>Position:</strong> Forward</p>
+                <p><strong>Age:</strong> 39</p>
+                <p><strong>Height:</strong> 6'9"</p>
+                <p><strong>College:</strong> None (High School)</p>
+            </div>
+            <img src="media/james.png" alt="LeBron James Image">
+        </div>
+
+        <!-- Player 2: Stephen Curry -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/201939/traditional" target="_blank">Stephen Curry</a></h2>
+                <p><strong>Team:</strong> Golden State Warriors</p>
+                <p><strong>Position:</strong> Guard</p>
+                <p><strong>Age:</strong> 36</p>
+                <p><strong>Height:</strong> 6'2"</p>
+                <p><strong>College:</strong> Davidson</p>
+            </div>
+            <img src="media/curry.png" alt="Stephen Curry Image">
+        </div>
+
+        <!-- Player 3: Giannis Antetokounmpo -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/203507/traditional" target="_blank">Giannis Antetokounmpo</a></h2>
+                <p><strong>Team:</strong> Milwaukee Bucks</p>
+                <p><strong>Position:</strong> Forward</p>
+                <p><strong>Age:</strong> 29</p>
+                <p><strong>Height:</strong> 7'0"</p>
+                <p><strong>Country:</strong> Greece</p>
+            </div>
+            <img src="media/antetokuonmpo.png" alt="Giannis Antetokounmpo Image">
+        </div>
+
+        <!-- Player 4: Nikola Jokic -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/player/203999/nikola_jokic" target="_blank">Nikola Jokic</a></h2>
+                <p><strong>Team:</strong> Denver Nuggets</p>
+                <p><strong>Position:</strong> Center</p>
+                <p><strong>Age:</strong> 28</p>
+                <p><strong>Height:</strong> 7'0"</p>
+                <p><strong>Country:</strong> Serbia</p>
+            </div>
+            <img src="media/jokic.png" alt="Nikola Jokic Image">
+        </div>
+
+        <!-- Player 5: Joel Embiid -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/player/203954/joel_embiid" target="_blank">Joel Embiid</a></h2>
+                <p><strong>Team:</strong> Philadelphia 76ers</p>
+                <p><strong>Position:</strong> Center</p>
+                <p><strong>Age:</strong> 29</p>
+                <p><strong>Height:</strong> 7'0"</p>
+                <p><strong>Country:</strong> Cameroon</p>
+            </div>
+            <img src="media/embiid.png" alt="Joel Embiid Image">
+        </div>
+
+        <!-- Player 6: Luka Doncic -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/1629029/traditional" target="_blank">Luka Dončić</a></h2>
+                <p><strong>Team:</strong> Dallas Mavericks</p>
+                <p><strong>Position:</strong> Guard</p>
+                <p><strong>Age:</strong> 25</p>
+                <p><strong>Height:</strong> 6'7"</p>
+                <p><strong>Country:</strong> Slovenia</p>
+            </div>
+            <img src="media/doncic.png" alt="Luka Doncic Image">
+        </div>
+
+        <!-- Player 7: Paul George -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/202331/traditional" target="_blank">Paul George</a></h2>
+                <p><strong>Team:</strong> Los Angeles Clippers</p>
+                <p><strong>Position:</strong> Forward</p>
+                <p><strong>Age:</strong> 34</p>
+                <p><strong>Height:</strong> 6'9"</p>
+                <p><strong>College:</strong> Fresno State</p>
+            </div>
+            <img src="media/george.png" alt="Paul George Image">
+        </div>
+
+        <!-- Player 8: Tyrese Haliburton -->
+        <div class="player-card">
+            <div class="player-info">
+                <h2><a href="https://www.nba.com/stats/player/1630169/traditional" target="_blank">Tyrese Haliburton</a></h2>
+                <p><strong>Team:</strong> Indiana Pacers</p>
+                <p><strong>Position:</strong> Guard</p>
+                <p><strong>Age:</strong> 24</p>
+                <p><strong>Height:</strong> 6'5"</p>
+                <p><strong>College:</strong> Iowa State</p>
+            </div>
+            <img src="media/haliburton.png" alt="Tyrese Haliburton Image">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NBA All-Stars. All rights reserved.</p>
+    </footer>
+</body>
+</html>
